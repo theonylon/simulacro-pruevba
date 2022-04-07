@@ -8,11 +8,11 @@ public class tp2 : MonoBehaviour
     public float precio2;
     public float precio3;
     public float monto;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-      float suma = precio1 + precio2 + precio3;
+        float suma = precio1 + precio2 + precio3;
 
         if (suma > monto)
         {
@@ -28,7 +28,7 @@ public class tp2 : MonoBehaviour
             Debug.Log(" el monto es mayor al precio de los tres productos");
         }
 
-       float resto = monto - suma;
+        float resto = monto - suma;
 
         if (resto < 0)
         {
@@ -38,15 +38,8 @@ public class tp2 : MonoBehaviour
         else
         {
             Debug.Log(" sobraron " + resto + "pesos ");
-        } 
-
-
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
     }
 }
